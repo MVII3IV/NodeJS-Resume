@@ -16,6 +16,6 @@ app.set('view engine', '.hbs');
 
 
 app.get("/", function(req, res){
-    res.render('index', {list: 'works'});
+    res.render('index', {list: 'lest see'});
 });
 
