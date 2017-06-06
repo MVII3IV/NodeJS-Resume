@@ -59,9 +59,9 @@
         <div class="contact-info">
             <div class="container text-center">
                 <ul class="list-inline">
-                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto:someone@example.com">{{user.personalInfo.email}}</a></li>
-                    <li><i class="fa fa-phone"></i> <a href="tel: 0123456789">{{user.personalInfo.phone}}</a></li>
-                    <li class="website"><i class="fa fa-globe"></i><a href="#" target="_blank">{{user.personalInfo.website}}</a></li>
+                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto:someone@example.com">{{user.contact.email}}</a></li>
+                    <li><i class="fa fa-phone"></i> <a href="tel: 0123456789">{{user.contact.phone}}</a></li>
+                    <li class="website"><i class="fa fa-globe"></i><a href="#" target="_blank">{{user.contact.website}}</a></li>
                 </ul>
             </div><!--//container-->
         </div><!--//contact-info-->
@@ -150,60 +150,7 @@
             
         </section><!--//skills-section-->
         
-        <section id="testimonials-section" class="testimonials-section section">
-            <h2 class="section-title">Testimonials</h2>
-            
-            <div id="testimonials-carousel" class="testimonials-carousel carousel slide" data-interval="8000">
-                
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#testimonials-carousel" data-slide-to="1"></li>
-                    <li data-target="#testimonials-carousel" data-slide-to="2"></li>
-                </ol>
-                
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <blockquote class="quote">      
-                            <i class="fa fa-quote-left"></i>                            
-                            <p>James is an excellent software engineer and he is passionate about what he does. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse porttitor metus eros.</p>
-                        </blockquote>    
-                        <div class="source">
-                            <div class="name">Rob Olson</div>
-                            <div class="position">Product Manager, Apple</div>
-                        </div><!--//source-->   
-                                                       
-                    </div><!--//item-->
-                    <div class="item">
-                        <blockquote class="quote">
-                            <p><i class="fa fa-quote-left"></i>
-                            Sed massa leo, aliquet non velit eu, volutpat vulputate odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse porttitor metus eros, ut fringilla nulla auctor a.</p>
-                            
-                        </blockquote>
-                        <div class="source">
-                            <div class="name">Christina Jensen</div>
-                            <div class="position">Senior Developer, Twitter</div>
-                        </div><!--//source-->   
-               
-                    </div><!--//item-->
-                    <div class="item">
-                        <blockquote class="quote">
-                            <p><i class="fa fa-quote-left"></i>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                        </blockquote>       
-                        <div class="source">
-                            <div class="name">Austin Ward</div>
-                            <div class="position">CEO, Startup Hub</div>
-                        </div><!--//source-->          
-                    </div><!--//item-->
-                    
-                </div><!--//carousel-inner-->
-            </div><!--//testimonials-carousel-->
-            
-        </section><!--//section-->
-        
-        
+  
      
         <section id="contact-section" class="contact-section section">
             <h2 class="section-title">Get in Touch</h2>
@@ -219,7 +166,7 @@
                         <li><i class="fa fa-check" aria-hidden="true"></i> UI development</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i> UX prototyping</li>
                     </ul>
-                    <p>Drop me a line at <a href="mailto:someone@example.com">james.doe@website.com</a> or call me at <a href="tel:01234567890">0123 456 7890</a></p>
+                    <p>Drop me a line at <a href="mailto:someone@example.com">{{user.contact.email}}</a> or call me at <a href="{{user.contact.phone}}">{{user.contact.phone}}</a></p>
                     <ul class="social list-inline">
                         <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -236,7 +183,7 @@
     
     <footer class="footer text-center">
         <div class="container">
-            <small class="copyright">Template Copyright @ <a href="http://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>
+            <small class="copyright">{{user.name}} @ <a href="{{user.contact.website}}" target="_blank">{{user.contact.website}}</a></small>
         </div><!--//container-->
     </footer>
     
